@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  src: url("../fonts/Graphik-Regular-Web.eot");
+  src: url("../fonts/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Graphik-Regular-Web.woff2") format("woff2"), url("../fonts/Graphik-Regular-Web.woff") format("woff"), url("../fonts/Graphik-Regular-Web.ttf") format("truetype");
+}
+font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Medium-Web.eot");
+  src: url("../fonts/Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Graphik-Medium-Web.woff2") format("woff2"), url("../fonts/Graphik-Medium-Web.woff") format("woff"), url("../fonts/Graphik-Medium-Web.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Bold-Web.eot");
+  src: url("../fonts/Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Graphik-Bold-Web.woff2") format("woff2"), url("../fonts/Graphik-Bold-Web.woff") format("woff"), url("../fonts/Graphik-Bold-Web.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Graphik", sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  color: #1b1b1b;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1921px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.main-container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 918px;
+  margin-left: auto;
+}
+
+header {
+  margin-top: 32px;
+}
+
+.nav {
+  position: fixed;
+  top: 300px;
+  max-width: 306px;
+}
+.nav__ul {
+  list-style-type: none;
+}
+.nav__link:not(last-of-type) {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__logo .icon {
+  margin-right: 24px;
+}
+.menu__name {
+  font-size: 14px;
+  color: #7d7d7d;
+  line-height: 22px;
+}
+.menu__name span {
+  font-weight: 500;
+  color: #1b1b1b;
+}
+.menu__burger {
+  position: relative;
+  margin-left: auto;
+  width: 32px;
+}
+.menu__burger::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #1b1b1b;
+}
+.menu__burger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #1b1b1b;
+  top: 8px;
+  left: 8px;
+}
+
+.parting__title {
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+.parting__lead {
+  margin-bottom: 65px;
+}
+.title {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.lead {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */
