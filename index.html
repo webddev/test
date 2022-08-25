@@ -26,13 +26,7 @@
       <div class="main-container">
         <div class="menu">
           <div class="menu__logo">
-            <img
-              src="img/logo.svg"
-              alt=""
-              width="50"
-              height="50"
-              class="icon"
-            />
+            <img src="img/logo.svg" width="50" height="50" class="menu__icon" />
             <div class="menu__name">
               <span>Федорова</span> <br />
               Полина Евгеньевна
@@ -42,23 +36,78 @@
         </div>
       </div>
     </header>
+    <div class="info-menu">
+      <svg
+        width="20"
+        height="20"
+        class="info-menu__icon-close"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11.4142 10L19.1924 2.22184L17.7782 0.807624L10 8.5858L2.22183 0.807624L0.807612 2.22184L8.58579 10L0.807612 17.7782L2.22183 19.1924L10 11.4142L17.7782 19.1924L19.1924 17.7782L11.4142 10Z"
+          fill="white"
+        />
+      </svg>
+      <div class="info-menu__description description">
+        <div class="description__row row">
+          <img
+            src="img/logo.svg"
+            width="50"
+            height="50"
+            class="info-menu__icon"
+          />
+          <p class="description__title mini-title">Задание выполнила</p>
+        </div>
+        <div class="description__contacts contacts">
+          <h2 class="description__title title">
+            Федорова <br />
+            Полина Евгеньевна
+          </h2>
+          <p class="description__text text">
+            Самостоятельно и с помощью курсов изучаю веб-разработку.
+          </p>
+          <a href="tel:+79964151763" class="l-text number"
+            >+7 (996) 415-17-63</a
+          >
+          <div class="contacts__footer">
+            <div class="contacts__row row">
+              <a href="" class="contacts__icon"
+                ><img src="img/media-link-icon.svg"
+              /></a>
+              <a href="" class="contacts__message">Написать в Telegram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <div class="main-container">
         <nav class="nav">
           <ul class="nav__ul">
             <li>
-              <a href="#" class="nav__link">Напутственное слово</a>
+              <a href="#parting" class="nav__link" data-section="parting"
+                >Напутственное слово</a
+              >
             </li>
-            <li><a href="#" class="nav__link">Сетка</a></li>
             <li>
-              <a href="#" class="nav__link">Типографика</a>
+              <a href="#grid" class="nav__link" data-section="grid">Сетка</a>
             </li>
-            <li><a href="#" class="nav__link">UI</a></li>
+            <li>
+              <a href="#typography" class="nav__link" data-section="typography"
+                >Типографика</a
+              >
+            </li>
+            <li><a href="#ui" class="nav__link" data-section="ui">UI</a></li>
           </ul>
         </nav>
+
         <div class="content-container">
-          <section class="parting">
-            <h1 class="parting__title title">Тестовое задание</h1>
+          <section class="parting" data-section="parting" id="parting">
+            <h1 class="parting__title main-title">Тестовое задание</h1>
             <p class="parting__lead lead">Уровень: junior</p>
             <p class="parting__text text">
               Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную
@@ -67,7 +116,356 @@
               твои данные. Ну что, поехали?
             </p>
           </section>
+          <section class="grid" id="grid" data-section="grid">
+            <h2 class="grid__title title">Сетка</h2>
+            <p class="grid__text text">
+              Задание предполагает адаптивную вёрстку. Используется 3 состояния
+              в зависимости от устройства. Сетка «резиновая» — переменной
+              ширины.
+            </p>
+            <div class="grid__block block-body">
+              <h3 class="block-body__subtitle subtitle">Десктоп (1200+)</h3>
+              <div class="grid__row row">
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Контент</p>
+                  <p class="block-body__info">1072–1312</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Колонок</p>
+                  <p class="block-body__info">12</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">
+                    Ширина колонки
+                  </p>
+                  <p class="block-body__info">60-80</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Межколонник</p>
+                  <p class="block-body__info">32</p>
+                </div>
+              </div>
+              <img src="img/note.png" class="block-body__img" alt="" />
+            </div>
+            <div class="grid__block block-body">
+              <h3 class="block-body__subtitle subtitle">Планшет (736+)</h3>
+              <div class="grid__row row">
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Контент</p>
+                  <p class="block-body__info">672–928</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Колонок</p>
+                  <p class="block-body__info">8</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">
+                    Ширина колонки
+                  </p>
+                  <p class="block-body__info">56-88</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Межколонник</p>
+                  <p class="block-body__info">32</p>
+                </div>
+              </div>
+              <img src="img/pic_tab.png" class="block-body__img" alt="" />
+            </div>
+            <div class="grid__block block-body">
+              <h3 class="block-body__subtitle subtitle">Телефон (320+)</h3>
+              <div class="grid__row row">
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Контент</p>
+                  <p class="block-body__info">296–424</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Колонок</p>
+                  <p class="block-body__info">4</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">
+                    Ширина колонки
+                  </p>
+                  <p class="block-body__info">56-88</p>
+                </div>
+                <div class="block-body__col">
+                  <p class="block-body__mini-title mini-title">Межколонник</p>
+                  <p class="block-body__info">24</p>
+                </div>
+              </div>
+              <img src="img/pic_mob.png" class="block-body__img" alt="" />
+            </div>
+          </section>
+          <section class="typography" id="typography" data-section="typography">
+            <h2 class="typography__title title">Типографика</h2>
+            <p class="typography__text text">
+              Используется шрифт Graphik. На телефонах стили типографики
+              переопределяются
+            </p>
+            <div class="typography__block block-body">
+              <div class="switches-row">
+                <p class="switches-row__switch_active switch switch-desk">
+                  Десктоп
+                </p>
+                <p class="switch switch-mob">Телефон</p>
+              </div>
+              <div class="block-body__block block-desk">
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title">
+                    Заголовок H1, 48/56, bold
+                  </p>
+                  <p class="main-title">Текст заголовка</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title">
+                    Заголовок H2, 32/40, bold
+                  </p>
+                  <p class="title">Текст заголовка</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title h3-m">
+                    Заголовок H3, 24/32, medium
+                  </p>
+                  <p class="subtitle">Текст заголовка</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title h4-m">
+                    Заголовок H4, 18/28, medium
+                  </p>
+                  <p class="title-h4">Текст заголовка</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title">
+                    Лид P_Lead, 24/32, regular
+                  </p>
+                  <p class="lead">Текст лида</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title p-l-m">
+                    Крупный текст P_18, 18/28, regular
+                  </p>
+                  <p class="l-text">Крупный текст</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title p-g-m">
+                    Основной текст P_16, 16/24, regular
+                  </p>
+                  <p class="text">Основной текст</p>
+                </div>
+                <div class="block-desk__row">
+                  <p class="block-desk__mini-title mini-title p-m-m">
+                    Впомогательный текст P_14, 14/20, regular
+                  </p>
+                  <p class="mini-title">Впомогательный текст</p>
+                </div>
+              </div>
+              <div class="block-body__block block-mob">
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title">
+                    Заголовок H1, 32/40, bold
+                  </p>
+                  <p class="block-mob__main-title main-title">
+                    Текст заголовка
+                  </p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title">
+                    Заголовок H2, 28/36, bold
+                  </p>
+                  <p class="block-mob__title title">Текст заголовка</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title h3-m">
+                    Заголовок H3, 20/28, medium
+                  </p>
+                  <p class="block-mob__subtitle subtitle">Текст заголовка</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title h4-m">
+                    Заголовок H4, 18/28, medium
+                  </p>
+                  <p class="title-h4">Текст заголовка</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title">
+                    Лид P_Lead, 20/28, regular
+                  </p>
+                  <p class="block-mob__lead lead">Текст лида</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title p-l-m">
+                    Крупный текст P_18, 18/28, regular
+                  </p>
+                  <p class="l-text">Крупный текст</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title p-g-m">
+                    Основной текст P_16, 16/24, regular
+                  </p>
+                  <p class="text">Основной текст</p>
+                </div>
+                <div class="block-mob__row">
+                  <p class="block-mob__mini-title mini-title p-m-m">
+                    Впомогательный текст P_14, 14/20, regular
+                  </p>
+                  <p class="mini-title">Впомогательный текст</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="ui" id="ui" data-section="ui">
+            <form action="#">
+              <h2 class="title">UI</h2>
+              <h4 class="ui__subtitle subtitle">Текстовое поле</h4>
+              <p class="error-title">E-mail</p>
+              <input
+                type="text"
+                name="Email"
+                class="input-text"
+                placeholder="Email"
+                required
+              />
+              <p class="error-text">Текст ошибки</p>
+              <h4 class="ui__subtitle subtitle">Выпадающий список</h4>
+              <p class="ui__text text">
+                Компонент состоит из текстового поля и выпадающей подсказки
+              </p>
+
+              <div class="__select" data-state="">
+                <div class="__select__title" data-default="Option 0">
+                  Выберите что-нибудь
+                </div>
+                <div class="__select__content">
+                  <input
+                    id="singleSelect0"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                    checked
+                  />
+                  <label for="singleSelect0" class="__select__label"
+                    >Выберите что-нибудь</label
+                  >
+                  <input
+                    id="singleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect1" class="__select__label"
+                    >Первый стул</label
+                  >
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect2" class="__select__label"
+                    >Второй стул</label
+                  >
+                  <input
+                    id="singleSelect3"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect3" class="__select__label"
+                    >Выбранный пункт</label
+                  >
+                  <input
+                    id="singleSelect4"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect4" class="__select__label"
+                    >Теорема Эскобара</label
+                  >
+                </div>
+              </div>
+              <h4 class="ui__subtitle subtitle">Кнопка</h4>
+              <button class="ui__button button">Отправить</button>
+              <button class="ui__button button_disabled" disabled>
+                Отправить
+              </button>
+              <h4 class="ui__subtitle subtitle">Чекбокс, радиобаттон</h4>
+              <div class="ui__row row">
+                <div class="row__col-checkbox">
+                  <label class="col-checkbox__label"
+                    ><input type="checkbox" name="option1" value="a1" />Выбери
+                    меня</label
+                  >
+                  <label class="col-checkbox__label"
+                    ><input type="checkbox" name="option1" value="a2" />Выбери
+                    меня</label
+                  >
+                  <label class="col-checkbox__label"
+                    ><input
+                      type="checkbox"
+                      name="option1"
+                      value="a3"
+                      checked
+                    />Птица счастья завтрашнего дня</label
+                  >
+                </div>
+                <div class="row__col-radio">
+                  <label class="col-radio__label"
+                    ><input
+                      type="radio"
+                      name="option1"
+                      value="a1"
+                    />Пластмассовый мир победил</label
+                  >
+                  <label class="col-radio__label"
+                    ><input type="radio" name="option1" value="a2" />Макет
+                    оказался сильней</label
+                  >
+                  <label class="col-radio__label"
+                    ><input
+                      type="radio"
+                      name="option1"
+                      value="a3"
+                      checked
+                    />Последний кораблик остыл
+                  </label>
+                </div>
+              </div>
+            </form>
+            <h4 class="ui__subtitle subtitle">Аккордеон</h4>
+            <div class="accordeon">
+              <p class="accordeon__title text">Аккордеон</p>
+              <div
+                class="accordeon__item"
+                style="height: 0px; opacity: 0; padding: 0px"
+              >
+                Гоpдость полными вагонами золотыми погонами <br />
+                С юга дyют молодые вет…<br />
+                Pазpывая в клочья облака не забыли шлют из далека<br />
+                С дома мама И не последняя любовь<br />
+                А по небy бегyт видишь чьи-то следы<br />
+                Это может быть ты это может быть я<br />
+                Это может наш дрyг<br />
+                Это может нам поют свои
+              </div>
+              <p class="accordeon__title text">Аккордеон</p>
+              <div
+                class="accordeon__item"
+                style="height: 0px; opacity: 0; padding: 0px"
+              >
+                Гоpдость полными вагонами золотыми погонами <br />
+                С юга дyют молодые вет…<br />
+                Pазpывая в клочья облака не забыли шлют из далека<br />
+                С дома мама И не последняя любовь<br />
+                А по небy бегyт видишь чьи-то следы<br />
+                Это может быть ты это может быть я<br />
+                Это может наш дрyг<br />
+                Это может нам поют свои
+              </div>
+            </div>
+          </section>
         </div>
+        <div class="bye">Победа! 😜</div>
       </div>
     </main>
     <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
@@ -75,5 +473,6 @@
       type="text/javascript"
       src="./js/jquery.mCustomScrollbar.min.js"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
